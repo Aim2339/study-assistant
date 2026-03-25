@@ -16,26 +16,14 @@ while True:
             sub = input(f"Enter subject {i+1}: ")
             subject_list.append(sub)
 
-        hours = int(input("Enter study hours available today: "))
+        hours = float(input("Enter total study hours available today: "))
+
+        time_per_subject = hours / subjects
 
         print("\n=== Your Study Plan ===")
 
-        if hours <= 2:
-            print("Focus on important subjects:")
-            print("-", subject_list[0])
-            print("Revise notes")
-
-        elif hours <= 4:
-            print("Study these subjects:")
-            for sub in subject_list[:2]:
-                print("-", sub)
-            print("Take short breaks")
-
-        else:
-            print("Full Study Plan:")
-            for sub in subject_list:
-                print("-", sub)
-            print("Practice problems and revise")
+        for sub in subject_list:
+            print(f"{sub} → {round(time_per_subject,2)} hours")
 
 
     elif choice == "2":
