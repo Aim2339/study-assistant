@@ -2,11 +2,12 @@ from planner import create_study_plan
 from cgpa import calculate_cgpa
 from emotion import detect_emotion
 from timetable import create_timetable
+from tips import show_tip
+from exam import exam_manager
 
 # The looping menu overshadowed the result from previous choice, so I did this
 def pause():
     input("\nPress Enter to return to menu...")
-
 
 while True:
 
@@ -15,7 +16,9 @@ while True:
     print("2. CGPA Calculator")
     print("3. Emotion Based Suggestion")
     print("4. Time Table Creator")
-    print("5. Exit")
+    print("5. Study Tips")
+    print("6. Exam Manager")
+    print("7. Exit")
 
     choice = input("Enter choice: ")
 
@@ -36,6 +39,14 @@ while True:
         pause()
 
     elif choice == "5":
+        show_tip()
+        pause()
+
+    elif choice == "6":
+        exam_manager()
+        pause()
+
+    elif choice == "7":
         print("Goodbye!")
         break
 
