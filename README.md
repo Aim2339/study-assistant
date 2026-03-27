@@ -1,8 +1,8 @@
-# AI Smart Study Assistant
+# AI Study Assistant
 
 ## Overview:
 
-AI Smart Study Assistant is a command-line based application designed to help students plan their studies more effectively. It provides study planning, CGPA calculation, exam tracking, mood-based suggestions, and productivity tips.
+AI Study Assistant is a command-line based application designed to help students plan their studies more effectively. It provides study planning, CGPA calculation, exam tracking, mood-based suggestions, and productivity tips.
 
 This project solves real-world problems that students face such as:
 
@@ -45,9 +45,9 @@ This project solves real-world problems that students face such as:
 ## Project Structure:
 
 ```
-study-assistant
+study-assistant/
 │
-├── screenshots
+├── screenshots/
 │   ├── menu.png
 │   ├── planner.png
 │   ├── cgpa.png
@@ -70,6 +70,7 @@ study-assistant
 ## Requirements:
 
 * Python 3.x
+* Git and GitHub
 * No external libraries required
 
 ---
@@ -124,7 +125,7 @@ python main.py
 
 ### Exam Manager
 
-![Exam Manager](screenshots/exams.png)
+![Exam Manager](screenshots/exam.png)
 
 ---
 
@@ -143,6 +144,6 @@ python main.py
 
 ## Made by:
 
-* Student Name: Aarav Sciju  
+*  Name: Aarav Sciju  
 * Registration number: 25BCE10099  
-* Course: Fundamentals in AI and ML  
+* Course: Fundamentals of AI and ML 

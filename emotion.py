@@ -19,7 +19,7 @@ def detect_emotion():
         suggestion = "Start with light study and build momentum."
 
     else:
-        emotion = "Neutral"
+        emotion = "Neutral (or not sure)"
         suggestion = "Follow your regular study plan."
 
     print("\nDetected Mood:", emotion)
