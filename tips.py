@@ -1,8 +1,6 @@
 import random
 
-
 def show_tip():
-
     tips = [
         "Start with the hardest subject first.",
         "Study in 45-minute focused sessions.",
@@ -15,8 +13,7 @@ def show_tip():
         "Review what you studied at the end of the day.",
         "Focus more on weak subjects."
     ]
-
     tip = random.choice(tips)
 
-    print("\n=== AI Study Tip ===")
+    print("\nAI Study Tip")
     print(tip)

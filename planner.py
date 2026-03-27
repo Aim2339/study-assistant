@@ -17,20 +17,14 @@ def create_study_plan():
         difficulty_list.append(diff)
 
     hours = float(input("\nEnter total study hours available today: "))
-
     total_weight = sum(difficulty_list)
 
-    print("\n=== Your Smart Study Plan ===")
-
+    print("\nYour Smart Study Plan")
     for i in range(subjects):
-
-        # Time for subject = (Subject Difficulty / Total Difficulty) × Total Study Hours
-
+        # Time for subject = (Subject Difficulty/Total Difficulty) * Total Study Hours
         time = (difficulty_list[i] / total_weight) * hours
-
         print(f"\n{subject_list[i]} → {round(time, 2)} hours")
 
-        # Study Type Recommendation
         if difficulty_list[i] == 3:
             print("Study Method: Practice problems and deep learning")
 

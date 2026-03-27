@@ -1,7 +1,6 @@
 from planner import create_study_plan
 from cgpa import calculate_cgpa
 from emotion import detect_emotion
-from timetable import create_timetable
 from tips import show_tip
 from exam import exam_manager
 
@@ -10,15 +9,13 @@ def pause():
     input("\nPress Enter to return to menu...")
 
 while True:
-
-    print("\n=== AI Smart Study Assistant ===")
+    print("\nAI Smart Study Assistant")
     print("1. Create Study Plan")
     print("2. CGPA Calculator")
     print("3. Emotion Based Suggestion")
-    print("4. Time Table Creator")
-    print("5. Study Tips")
-    print("6. Exam Manager")
-    print("7. Exit")
+    print("4. Study Tips")
+    print("5. Exam Manager")
+    print("6. Exit")
 
     choice = input("Enter choice: ")
 
@@ -35,18 +32,14 @@ while True:
         pause()
 
     elif choice == "4":
-        create_timetable()
-        pause()
-
-    elif choice == "5":
         show_tip()
         pause()
 
-    elif choice == "6":
+    elif choice == "5":
         exam_manager()
         pause()
 
-    elif choice == "7":
+    elif choice == "6":
         print("Goodbye!")
         break
 

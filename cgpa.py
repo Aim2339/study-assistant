@@ -1,9 +1,6 @@
 def calculate_cgpa():
-
     subjects = int(input("Enter number of subjects: "))
-
     total = 0
-
     print("\nEnter grades out of 10")
 
     for i in range(subjects):
@@ -11,5 +8,4 @@ def calculate_cgpa():
         total += grade
 
     cgpa = total / subjects
-
-    print(f"\nYour CGPA is: {round(cgpa,2)}")
+    print("\nYour CGPA is: ", cgpa)
